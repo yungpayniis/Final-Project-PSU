@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LOGIN CHECK CREDIT IT</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+  <SCRIPT>
+<!-- Begin
+function check_data()
+{ 
+var num = /^([0-9])+$/;
+
+if (!(num.test(document.all.txtUsername.value)))
+{
+alert("กรุณากรอก Student ID เป็นตัวเลข");
+document.all.txtUsername.select();
+return false;
+}
+} 
+</SCRIPT>
+<form name="form1" onsubmit="return check_data()" method="post" action="check_register.php">
+  <div class="container">
+      <div class="card card-login mx-auto mt-5">
+        <div class="card-header">Login</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input name="txtUsername" type="text" id="txtUsername" class="form-control"  >
+                <label for="txtUsername">Student ID</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input name="txtPassword" type="password" id="txtPassword" class="form-control"  >
+                <label for="txtPassword">Password</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input name="name" type="text" id="name" class="form-control"  >
+                <label for="name">Full Name</label>
+              </div>
+            </div>
+           <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" >ปีของหลักสูตร(ปวส)</span>
+    </div>
+    <select class="custom-select" type="text" name="year_structer" >
+        <option value="">เลือกปีหลักสูตร</option>
+       <option value="2545">2545</option>
+       <option value="2557">2557</option>
+    
+    </select>
+    </div>
+            
+           
+           
+            <input class="btn btn-primary btn-block" type="submit" name="Submit" value="Register">
+          </form>
+          <br>
+
+          
+           <!-- <a class="d-block small mt-3" href="register.html">Register an Account</a>
+           <a class="d-block small" href="forgot-password.html">Forgot Password?</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+</form>
+
+
+</body>
+</html>
